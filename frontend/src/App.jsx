@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get('https:localhost:3000/api/quotes')
+      .get('/api/quotes')
       .then((res) => {
         setQuotes(res.data);
       })
